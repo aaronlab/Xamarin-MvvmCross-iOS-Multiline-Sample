@@ -6,7 +6,7 @@ using System.Text;
 using Foundation;
 using UIKit;
 
-namespace EY.Core.IOSLib.Helper
+namespace MvvmCross.Core.IOSLib.Helper
 {
     public sealed class AutoLayoutHelper
     {
