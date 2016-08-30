@@ -1,4 +1,4 @@
-﻿using EY.Core.IOSLib.Helper;
+﻿using MvvmCross.Core.IOSLib.Helper;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.iOS.Views;
 using MvvmCross.MultiLine.Core.Model;
