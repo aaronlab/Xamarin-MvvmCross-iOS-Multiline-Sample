@@ -12,9 +12,11 @@ namespace MvvmCross.MultiLine.iOS.Views
     public class FirstViewTableSource : MvxTableViewSource
     {
         public List<SampleData> Items { get { return this.ItemsSource as List<SampleData>; } }
+		public bool IsBroken { get; set; }
 
         public FirstViewTableSource(UITableView tableView):base(tableView)
         {
+			IsBroken = true;
         }
 
         public override nint NumberOfSections(UITableView tableView)
@@ -45,6 +47,16 @@ namespace MvvmCross.MultiLine.iOS.Views
 
             if(cell != null)
             {
+				//fix issue by dropping and rebuild bindings
+				if (!IsBroken)
+				{
+					var extendedCell = cell as ExtendedCell;
+					if (extendedCell != null)
+					{
+						extendedCell.ResetBindings();
+					}
+				}
+
                 var bindable = cell as IMvxDataConsumer;
                 if (bindable != null)
                 {

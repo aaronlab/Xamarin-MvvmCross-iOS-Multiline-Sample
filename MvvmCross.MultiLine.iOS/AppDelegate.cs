@@ -1,6 +1,7 @@
 ﻿using Foundation;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
+using MvvmCross.MultiLine.iOS.Presenter;
 using MvvmCross.Platform;
 using UIKit;
 
@@ -18,11 +19,11 @@ namespace MvvmCross.MultiLine.iOS
             get;
             set;
         }
-        public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+        public override bool FinishedLaunching(UIApplication application, NSDictionary options)
         {
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
-
-            var setup = new Setup(this, Window);
+			var presenter = new CustomViewPresenter(this, Window);
+            var setup = new Setup(this, presenter);
             setup.Initialize();
 
             var startup = Mvx.Resolve<IMvxAppStart>();

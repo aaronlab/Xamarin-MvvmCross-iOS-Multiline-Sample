@@ -10,7 +10,7 @@ using UIKit;
 
 namespace MvvmCross.MultiLine.iOS.Views
 {
-    public class MultiLineCellQuote : MvxTableViewCell
+    public class MultiLineCellQuote : ExtendedCell
     {
         public const string Key = "MultiLineCell";
 
@@ -73,7 +73,7 @@ namespace MvvmCross.MultiLine.iOS.Views
             this.ContentView.LayoutIfNeeded();
         }
 
-        private void CreateBindings()
+        protected override void CreateBindings()
         {
             this.DelayBind(() =>
             {
@@ -84,7 +84,7 @@ namespace MvvmCross.MultiLine.iOS.Views
         }
 
 
-        private void SetupConstraints()
+        protected override void SetupConstraints()
         {
             AutoLayoutHelper.AttachToParentTop(ContentView, _key, 5, "ContentView|_artist|AttachToParentTop");
             AutoLayoutHelper.AttachToParentHorizontally(ContentView, _key, 5, "ContentView|_artist|AttachToParentHortizontally");

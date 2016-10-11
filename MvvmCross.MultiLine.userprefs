@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{B5082879-4DA3-469B-93E0-4636F7278CB4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MvvmCross.MultiLine.iOS/Views/MultiLineCellPerson.cs">
+    <Files>
+      <File FileName="MvvmCross.MultiLine.iOS/Views/FirstView.cs" Line="39" Column="13" />
+      <File FileName="MvvmCross.MultiLine.iOS/Views/ExtendedCell.cs" Line="159" Column="42" />
+      <File FileName="MvvmCross.MultiLine.iOS/Views/MultiLineCellQuote.cs" Line="13" Column="51" />
+      <File FileName="MvvmCross.MultiLine.iOS/Views/FirstViewTableSource.cs" Line="46" Column="14" NotebookId="1" />
+      <File FileName="MvvmCross.MultiLine.iOS/Views/MultiLineCellPerson.cs" Line="13" Column="52" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MvvmCross.MultiLine.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.54215DDC-A98F-4559-9A0F-B73A0F94E5AA" />
+</Properties>
